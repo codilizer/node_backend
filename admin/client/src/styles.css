@@ -1,0 +1,6 @@
+body { background: #f6f7f9; }
+.sidebar .list-group-item.active { background-color: #212529; border-color: #212529; }
+.table td, .table th { vertical-align: middle; }
+dl.row dt { font-weight: 600; color: #555; }
+.page-link { cursor: pointer; }
+.nav-pills .nav-link { cursor: pointer; }

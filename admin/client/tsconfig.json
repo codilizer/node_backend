@@ -1,0 +1,17 @@
+{
+	// 관리 페이지(React) TypeScript 설정. 서버 tsconfig 와 분리되어 있다.
+	"compilerOptions": {
+		"target": "ES2022",
+		"lib": ["ES2022", "DOM", "DOM.Iterable"],
+		"module": "ESNext",
+		"moduleResolution": "Bundler",
+		"jsx": "react-jsx",
+		"strict": true,
+		"noEmit": true,
+		"isolatedModules": true,
+		"allowImportingTsExtensions": true,
+		"skipLibCheck": true,
+		"types": ["vite/client"]
+	},
+	"include": ["src", "vite.config.ts"]
+}

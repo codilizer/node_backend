@@ -1,0 +1,37 @@
+{
+	// 서버 측 TypeScript 설정
+	// Node 22 가 .ts 를 직접 실행(타입 제거만 수행)하므로 tsc 는 타입 검사(noEmit)에만 사용한다.
+	// erasableSyntaxOnly: enum / namespace / 생성자 매개변수 프로퍼티 등 Node 가 제거할 수 없는 문법을 금지한다.
+	"compilerOptions": {
+		"target": "ES2022",
+		"module": "NodeNext",
+		"moduleResolution": "NodeNext",
+		"lib": ["ES2023"],
+		"types": ["node"],
+		"strict": true,
+		"noEmit": true,
+		"allowImportingTsExtensions": true,
+		"erasableSyntaxOnly": true,
+		"verbatimModuleSyntax": true,
+		"esModuleInterop": true,
+		"resolveJsonModule": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		"noUnusedLocals": false
+	},
+	"include": [
+		"config/**/*.ts",
+		"lib/**/*.ts",
+		"model/**/*.ts",
+		"doc/**/*.ts",
+		"app/**/*.ts",
+		"admin/*.ts",
+		"admin/config/**/*.ts",
+		"admin/lang/**/*.ts",
+		"admin/routes/**/*.ts",
+		"batch/**/*.ts",
+		"scripts/**/*.ts",
+		"test/**/*.ts"
+	],
+	"exclude": ["node_modules", "admin/client", "admin/public"]
+}
