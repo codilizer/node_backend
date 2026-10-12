@@ -1,0 +1,16 @@
+node_modules/
+.env
+*.log
+logs/*
+!logs/.gitkeep
+temp/*
+!temp/.gitkeep
+app/public/img/profile/*
+!app/public/img/profile/.gitkeep
+admin/public/dist/
+coverage/
+dump.rdb
+.DS_Store
+.idea/
+*.iml
+.vscode/
